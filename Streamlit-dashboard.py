@@ -5,10 +5,10 @@ import pandas as pd
 
 # Create input widgets in the sidebar
 st.sidebar.markdown('## Snowflake Connection')
-account_name = st.sidebar.text_input('Account name', value="NV31387.ap-south-1.aws")
+account_name = st.sidebar.text_input('Account name', value="account-name.ap-south-1.aws")
 database = st.sidebar.text_input('Database', value="Sales")
-username = st.sidebar.text_input('Username',value="zainjaved965")
-password = st.sidebar.text_input('Password' ,type="password", value="SnowflakeT1")
+username = st.sidebar.text_input('Username',value="username")
+password = st.sidebar.text_input('Password' ,type="password", value="password")
 role = st.sidebar.text_input('Role',"ACCOUNTADMIN")
 
 st.session_state.setdefault('snow_conn', None)
